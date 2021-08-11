@@ -1,7 +1,13 @@
 import cbpro, time, threading, pickle
+import os 
+import dotenv
 
-API_KEY = "secret"
-API_SECRET = "secret"API_PASS = "secret"
+load_dotenv
+
+API_KEY = os.getenv('API_KEY')
+API_SECRET = os.getenv('API_SECRET')
+API_PASS = os.getenv('API_PASS')
+
 FLOOR_PRICE = 28121
 BITCOIN_TRADE_FLOOR = 0.001
 COINBASE_FEE = 0.005
@@ -9,12 +15,12 @@ BUY_MULTIPLIER = COINBASE_FEE + 0.004
 SELL_MULTIPLIER = COINBASE_FEE + 0.005
 
 
-sandboxSecret = "secret"
-sandboxKey = "secret"
-sandboxPass = "secret"
+sandboxSecret = os.getenv('sandboxSecret')
+sandboxKey = os.getenv('sandboxKey')
+sandboxPass = os.getenv('sandboxPass')
 
-btc_id = "secret"
-usd_id = "secret"
+btc_id = os.getenv('btc_id')
+usd_id = os.getenv('usd_id')
 
 bids = {}
 asks = {}
