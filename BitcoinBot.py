@@ -1,8 +1,8 @@
 import cbpro, time, threading, pickle
 import os 
-import dotenv
+from dotenv import load_dotenv
 
-load_dotenv
+load_dotenv()
 
 API_KEY = os.getenv('API_KEY')
 API_SECRET = os.getenv('API_SECRET')
@@ -71,7 +71,6 @@ def printaccount():
 class DoThis(threading.Thread):
     def __init__( self ):
         threading.Thread.__init__( self )
-
         self.stop = False
 
     # run is where the dothis code will be
