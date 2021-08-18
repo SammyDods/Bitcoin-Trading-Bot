@@ -30,3 +30,6 @@ View account balance
 quit
 ```
 End program and save pkl files
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
